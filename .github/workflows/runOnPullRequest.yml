@@ -6,10 +6,10 @@ name: Run some code when new PR is created or existing PR is modified
 # 3. https://github.community/t/duplicate-checks-on-push-and-pull-request-simultaneous-event/18012
 
 on: 
+  # Force workflow for direct commits into 'main' and for PR merges into 'main'
   push:
     branches:    
       - main
-      
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
