@@ -1,5 +1,9 @@
 name: Run some code when new PR is created or existing PR is modified
 
+# More details: 
+# 1. https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps/
+# 2. https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule
+
 on: 
   push:
   pull_request:
