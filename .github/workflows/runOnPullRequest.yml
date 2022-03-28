@@ -19,4 +19,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         #run: findstr /c:"Hello World" file1.txt >nul || (echo "Hello World" was not found in file1.txt && exit 1)
-        run: grep 'Hello World' file1.txt || (echo "Hello World" was not found in file1.txt && exit 1)
+        run: grep -q 'Hello World' file1.txt || (echo "Hello World" was not found in file1.txt && exit 1)
