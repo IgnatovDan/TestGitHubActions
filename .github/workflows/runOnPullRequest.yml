@@ -7,7 +7,9 @@ name: Run some code when new PR is created or existing PR is modified
 
 on: 
   push:
-    - main
+    branches:    
+      - main
+      
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
