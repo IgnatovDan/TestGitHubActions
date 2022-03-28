@@ -1,6 +1,8 @@
 name: Run some code when new PR is created or existing PR is modified
 
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
