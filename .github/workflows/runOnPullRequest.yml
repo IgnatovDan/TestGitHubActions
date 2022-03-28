@@ -1,14 +1,15 @@
 name: Run some code when new PR is created or existing PR is modified
 
 # More details: 
-# 1. https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps/
-# 2. https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule
-# 3. https://github.community/t/duplicate-checks-on-push-and-pull-request-simultaneous-event/18012
+# - https://docs.github.com/en/actions/quickstart
+# - https://crunchingnumbers.live/2020/03/17/ci-with-github-actions-for-ember-apps/
+# - https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule
+# - https://github.community/t/duplicate-checks-on-push-and-pull-request-simultaneous-event/18012
 
 on: 
   # Force workflow for direct commits into 'main' and for PR merges into 'main'
   push:
-    branches:    
+    branches:
       - main
   pull_request:
 
