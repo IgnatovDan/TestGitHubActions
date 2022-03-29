@@ -8,10 +8,12 @@ name: Run some code when new PR is created or existing PR is modified
 # - https://stackoverflow.com/questions/66353544/should-i-pseudo-fork-my-own-github-repository-or-use-branches
 
 on: 
-  # Force workflow for direct commits into 'main' and for PR merges into 'main'
+  # Force workflow when a direct commit OR a PR is merged into 'main'
   push:
     branches:
       - main
+  # Start workflow after a PR is created OR after each change in a PR
+  # In addition, enable "Require branches to be up to date before merging" for repository to run tests on the latest PR sources
   pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
